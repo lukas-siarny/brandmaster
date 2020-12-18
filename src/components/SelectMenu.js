@@ -18,6 +18,7 @@ const SelectMenu = ({zIndex}) => {
     const handleSelectedValueChange = (value, key) => {
         if(options[key] === selectedValue){
             setSelectedValue(defaultValue)
+            setActive(false);
             return;
         }
 

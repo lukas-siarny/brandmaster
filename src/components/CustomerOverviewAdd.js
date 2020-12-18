@@ -74,7 +74,7 @@ const CustomerOverviewAdd = ({onModalClose, addNewCustomer}) => {
                                 name="addNewCustomer"
                                 value={title}
                                 onChange={handleOnChange}
-                                placeholder="Please, fill the name of a new customer..."
+                                placeholder="Please, fill out the name of a new customer..."
                             />
                             <button className="modal-button" type="submit">
                                 <i className="fas fa-plus"></i>

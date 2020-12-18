@@ -15,8 +15,10 @@ export const validateInput = input => {
     let errorMassage;
 
     if(input.trim() === ""){
-        errorMassage = "You must enter the name of the customer...";
+        errorMassage = "You must enter a name of a customer...";
     }
+
+    // other checks here
 
     return errorMassage;
 }
