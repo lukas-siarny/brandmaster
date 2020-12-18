@@ -1,0 +1,15 @@
+.header{
+    position: fixed;
+    width: 100%;
+    background: $color-primary;
+    height: $header-height;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    z-index: 991;
+    @include box-shadow();
+
+    &__title{
+        font-size: 1rem;
+    }
+}

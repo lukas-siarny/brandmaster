@@ -1,0 +1,72 @@
+[  
+    {
+        "id": 1,
+        "logo": "<i class=\"fab fa-pied-piper-pp logo-bmw\"></i>",
+        "name": "BMW Nordic",
+        "com_id": 123,
+        "status": "active",
+        "enabled": true,
+        "log_id": 5210,
+        "size": 26000000000
+    },
+    {
+        "id": 2,
+        "logo": "<i class=\"fab fa-google logo-mercedes\"></i>",
+        "name": "Merecedes-Benz Europe",
+        "com_id": 222,
+        "status": "active",
+        "enabled": true,
+        "log_id": 2321,
+        "size": 40000000000
+    },
+    {
+        "id": 3,
+        "logo": "<i class=\"fab fa-joomla logo-cola\"></i>",
+        "name": "Coca-Cola",
+        "com_id": 256,
+        "status": "active",
+        "enabled": true,
+        "log_id": 2353,
+        "size": 68000000000
+    },
+    {
+        "id": 4,
+        "logo": "<i class=\"fab fa-wordpress logo-audi\"></i>",
+        "name": "Audi Slovakia",
+        "com_id": 999,
+        "status": "active",
+        "enabled": true,
+        "log_id": 5252,
+        "size": 87000000000
+    },
+    {
+        "id": 5,
+        "logo": "<i class=\"fab fa-reddit logo-brandmaster\"></i>",
+        "name": "BrandMaster AS",
+        "com_id": 821,
+        "status": "active",
+        "enabled": true,
+        "log_id": 7868,
+        "size": 119000000000
+    },
+    {
+        "id": 6,
+        "logo": "<i class=\"fas fa-warehouse logo-kia\"></i>",
+        "name": "Kia Motors Slovakia",
+        "com_id": 70,
+        "status": "active",
+        "enabled": true,
+        "log_id": 100,
+        "size": 225000000000
+    },
+    {
+        "id": 7,
+        "logo": "<i class=\"far fa-eye logo-github\"></i>",
+        "name": "GitHub",
+        "com_id": 5230,
+        "status": "active",
+        "enabled": true,
+        "log_id": 154,
+        "size": 1200000000000
+    }
+]

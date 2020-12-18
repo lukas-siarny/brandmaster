@@ -1,0 +1,179 @@
+.customers-navbar {
+    display: flex;
+    justify-content: space-between;
+
+    &__form{
+        position: relative;
+        color: $color-secondary;
+    }
+
+    &__input{
+        border: 1px solid $color-secondary;
+        color: $color-secondary;
+        height: 100%;
+        border-radius: 5px;
+        padding: 0 1rem 0 2.2rem;
+        width: 20%;
+        min-width: 18rem;
+
+        &:focus{
+            outline-color: $color-secondary;
+        }
+
+        &::placeholder {
+
+            color: $color-secondary;
+        }
+
+        &::-webkit-input-placeholder {
+            color: $color-secondary;
+        }
+        
+        &:-ms-input-placeholder { 
+            color: $color-secondary;
+        }
+    }
+
+    &__search-icon{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0.8rem;
+    }
+    
+}
+
+.customers-table{
+    width: 100%;
+    background: $color-primary;
+    border-collapse: collapse;
+
+    &__wrapper{
+        margin-top: 1.5rem;
+        border-radius: 5px;
+        //overflow: hidden;
+        @include box-shadow();
+    }
+
+    &__col-1{
+        width: 12.5%;
+    }
+
+    &__col-2{
+        width: 25%;
+    }
+
+    &__col-3{
+        width: 25%;
+    }
+
+
+    &__head{
+
+        th{
+            background: $color-hover;
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;            
+        }
+
+        th:first-of-type{
+            border-left: 0.5rem solid $color-hover;
+            padding-left: 1rem;
+            text-align: left;            
+        }
+
+        th:last-of-type{
+            border-right: 0.5rem solid $color-hover;   
+        }
+
+        .th-size{
+            position: relative;
+            z-index: 5;
+
+            &::before{
+                position: absolute;
+                z-index: -1;
+                content: "";
+                top: 0;
+                width: 100%;
+                height: 100%;
+                right: -1rem;
+                background: url("../../images/size.svg") no-repeat right center;
+                background-size: 0.5rem;
+            }
+        }
+
+    }
+
+    &__body{
+
+        td{
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        tr:first-of-type td {
+            border-top: 0.8rem solid $color-primary;
+        }
+
+        tr:last-of-type td{
+            border-bottom: 0.8rem solid $color-primary;
+        }
+
+        tr td:first-of-type{
+            border-left: 0.5rem solid $color-primary;
+        }
+
+        tr td:last-of-type{
+            border-right: 0.5rem solid $color-primary;
+        }
+
+        td:first-of-type,
+        td:nth-of-type(2),
+        {
+            text-align: left;
+        }
+
+        & tr{
+            transition: background 100ms ease-in-out;
+        }
+
+        & tr:hover{
+            background: $color-hover;
+        }
+
+        .th-customer-logo {
+            display: inline-block;
+            width: 2rem;
+        }
+        
+        .th-customer-active{
+            display: inline-block;
+            color: $color-success;
+            background: rgba($color-success, 0.3);
+            padding: 0.2rem 1rem;
+            border-radius: 3px;
+        }
+    }
+
+}
+
+.logo-github { color: orange; }
+.logo-kia { color: blue } 
+.logo-brandmaster { color: lime; }
+.logo-audi { color: pink } 
+.logo-mercedes { color: gray; }
+.logo-bmw { color: aquamarine } 
+.logo-cola { color: red; }
+
+@media(max-width: 1200px) {
+    .customers-table{    
+        &__col-2{
+            width: 30%;
+        }
+
+        &__col-3{
+            width: 20%;
+        }
+    }    
+}

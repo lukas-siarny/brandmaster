@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles/css/style.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import Header from "./components/Header";
+import SideMenu from "./components/Sidemenu";
+import CustomerOverview from "./components/CustomerOverview";
+import Reports from "./components/Reports";
+import FileTranscodings from "./components/FileTranscodings";
+import NotificationsCenter from "./components/NotificationsCenter";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+        <Header />
+        <div className="site-wrapper">
+            <SideMenu />
+            <main className="main">
+                <div className="main__wrapper">
+                    <Switch>
+                        <Route exact path="/" component={CustomerOverview} />  
+                        <Route exact path="/reports" component={Reports} />  
+                        <Route exact path="/file-transcodings" component={FileTranscodings} />  
+                        <Route exact path="/notifications-center" component={NotificationsCenter} />    
+                    </Switch>
+                </div>    
+            </main>
+        </div>
+    </Router>
   );
 }
 
